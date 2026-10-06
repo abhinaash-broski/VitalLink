@@ -6,4 +6,4 @@ scratch-ref/
 .env*
 
 # Claude Code session files
-.claude/settings.local.json
+.claude/
