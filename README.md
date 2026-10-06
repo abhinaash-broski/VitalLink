@@ -11,6 +11,7 @@ packages/
 apps/
   web/      React 19 · Vite · React Router · CSS modules       (desktop portal, 1440 frames)
   mobile/   Expo SDK 57 · Expo Router · react-native-svg            (390 frames)
+backend/    FastAPI + Supabase design and build plan (not built yet; start at backend/README.md)
 ```
 
 ## Run

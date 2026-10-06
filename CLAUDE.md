@@ -113,8 +113,10 @@ the 10 Profile screens). Mock data drives everything. Sign-in/sign-up are stubs 
   Create Account "Entries don't match yet." helper, mobile Emergency "Show QR" reveals the web QR card.
 - Workouts/Records use km (as in Figma) while Activity uses miles — units should follow Settings › Units.
 
-## Backend (designed, not built here)
-Doc: "VitalLink Backend System Design" https://claude.ai/code/artifact/d83166e0-f781-45e9-80e8-d0f399be60cf
+## Backend (designed, not built yet)
+Plan in `backend/` (README + docs/01–10: intro, architecture, class diagram, ER/database (35 tables),
+API catalogue mapped to every `client.pending()` call, consent/security, flows, ops, build plan, open
+decisions D1–D16) with a README per planned module under `backend/app/`. It extends the original doc: "VitalLink Backend System Design" https://claude.ai/code/artifact/d83166e0-f781-45e9-80e8-d0f399be60cf
 - Python 3.12 + FastAPI modular monolith on Render free (Virginia).
 - Supabase (us-east-1): Postgres in private `vitallink` schema, Data API off, deny-all RLS, connect via session
   pooler :5432; Supabase Auth with email confirmation; private Storage bucket.
