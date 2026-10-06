@@ -1,0 +1,17 @@
+{
+  "name": "vitallink-app",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "tokens": "node packages/tokens/build.mjs",
+    "icons": "python3 scripts/write-icons.py",
+    "web": "npm run dev -w @vitallink/web",
+    "web:build": "npm run build -w @vitallink/web",
+    "mobile": "npm run start -w @vitallink/mobile",
+    "typecheck": "tsc -p apps/web --noEmit && tsc -p apps/mobile --noEmit",
+    "mobile:web": "npm run web -w @vitallink/mobile"
+  }
+}

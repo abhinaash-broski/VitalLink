@@ -1,0 +1,129 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Score card: inverse, r16, px28 py26, ring + text + CTA */
+.score {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 26px 28px;
+  border-radius: 16px;
+  background: var(--vl-bg-inverse);
+  color: var(--vl-text-inverse);
+}
+.scoreText {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.scoreValue {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.scoreCta {
+  margin-left: auto;
+}
+
+.grid {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+.left {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.charts {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+.chart {
+  flex: 1;
+  min-width: 0;
+  gap: 4px;
+}
+.range {
+  margin-top: 8px;
+}
+.bpPlot {
+  margin-top: 16px;
+}
+.legend {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--vl-text-secondary);
+}
+.legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rail {
+  width: 340px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.railCard {
+  gap: 12px;
+}
+.meds {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.meds li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.medDot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.medTitle {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.streak {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.streakIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background: var(--vl-bg-critical-subtle);
+}
+.lab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,0 +1,109 @@
+.search {
+  display: flex;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--vl-border-default);
+  background: var(--vl-bg-surface);
+}
+.search:focus-within {
+  box-shadow: 0 0 0 4px var(--vl-border-focus);
+}
+.search input {
+  flex: 1;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: var(--vl-text-primary);
+}
+.search input::placeholder {
+  color: var(--vl-text-placeholder);
+}
+
+.split {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+/* Categories: 230 wide, 14/12 padding, gap 4. */
+.cats {
+  width: 230px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 12px;
+  border-radius: var(--vl-radius-lg);
+  border: 1px solid var(--vl-border-subtle);
+  background: var(--vl-bg-surface);
+}
+.cat {
+  padding: 9px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  text-align: left;
+  color: var(--vl-text-secondary);
+}
+.cat:hover {
+  background: var(--vl-bg-subtle);
+}
+.catActive,
+.catActive:hover {
+  background: var(--vl-bg-brand-subtle);
+  color: var(--vl-text-brand);
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* Featured: inverse, 28 padding, gap 24, radius 16. */
+.featured {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 28px;
+  border-radius: var(--vl-radius-xl);
+  background: var(--vl-bg-inverse);
+}
+.copy {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.read {
+  padding: 12px 22px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--vl-bg-brand);
+  color: var(--vl-text-on-brand);
+  white-space: nowrap;
+}
+.articles {
+  display: grid;
+  grid-template-columns: repeat(3, 268px);
+  gap: 16px;
+  align-items: start;
+}
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 20px;
+  border-radius: var(--vl-radius-lg);
+  border: 1px solid var(--vl-border-subtle);
+  background: var(--vl-bg-surface);
+  box-shadow: var(--vl-elevation-card);
+}
+.article:hover {
+  border-color: var(--vl-border-default);
+}
+.tag {
+  padding: 3px 9px;
+  border-radius: 999px;
+}

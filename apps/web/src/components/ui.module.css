@@ -1,0 +1,202 @@
+/* ---------- Logo ---------- */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logoLg {
+  gap: 12px;
+}
+.mark {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  background: var(--vl-bg-brand);
+  flex-shrink: 0;
+}
+.mark > svg {
+  position: absolute;
+  left: 6.5px;
+  top: 6.5px;
+}
+.markLg {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+}
+.markLg > svg {
+  left: 7px;
+  top: 7px;
+}
+
+/* ---------- Button ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid transparent;
+  border-radius: var(--vl-radius-md);
+  white-space: nowrap;
+  font-family: var(--vl-font-sans);
+  transition: background-color 120ms ease;
+}
+.primary {
+  background: var(--vl-bg-brand);
+  color: var(--vl-text-on-brand);
+}
+.primary:hover {
+  background: var(--vl-bg-brand-hover);
+}
+.secondary {
+  background: var(--vl-bg-surface);
+  border-color: var(--vl-border-default);
+  color: var(--vl-text-primary);
+}
+.secondary:hover {
+  background: var(--vl-bg-subtle);
+}
+/* Sizes taken from the Figma frames that use each one. */
+.block {
+  width: 100%;
+  padding: 13px 0; /* 14 + 14 with 1px border = 48px, as in sign-in */
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.blockOutline {
+  width: 100%;
+  padding: 11px 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.md {
+  padding: 9px 17px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.cta {
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.sm {
+  padding: 7px 13px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+/* ---------- Chip ---------- */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 8px;
+  border-radius: var(--vl-radius-full);
+  white-space: nowrap;
+}
+.chipDot {
+  padding: 3px 10px 3px 9px;
+}
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ---------- Card ---------- */
+.card {
+  background: var(--vl-bg-surface);
+  border: 1px solid var(--vl-border-subtle);
+  border-radius: var(--vl-radius-lg);
+  box-shadow: var(--vl-elevation-card);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- Metric card ---------- */
+.metric {
+  composes: card;
+  gap: var(--vl-spacing-3);
+  padding: var(--vl-spacing-5);
+}
+.metricHead {
+  display: flex;
+  align-items: center;
+  gap: var(--vl-spacing-2);
+}
+.accent {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.valueRow {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  white-space: nowrap;
+}
+.metricFoot {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ---------- Avatar ---------- */
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--vl-radius-full);
+  background: var(--vl-bg-brand);
+  color: var(--vl-text-on-brand);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  flex-shrink: 0;
+}
+
+/* ---------- Segmented range ---------- */
+.segmented {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 8px;
+  background: var(--vl-bg-subtle);
+  align-self: flex-start;
+}
+.segment {
+  border: 0;
+  background: transparent;
+  border-radius: 6px;
+  padding: 5px 10px;
+  color: var(--vl-text-tertiary);
+}
+.segmentWide {
+  padding: 6px 12px;
+}
+.segment[aria-pressed="true"] {
+  background: var(--vl-bg-surface);
+  color: var(--vl-text-primary);
+}
+
+/* ---------- Progress ---------- */
+.track {
+  height: 7px;
+  border-radius: 999px;
+  background: var(--vl-bg-subtle);
+  overflow: hidden;
+}
+.fill {
+  height: 100%;
+  border-radius: 999px;
+}

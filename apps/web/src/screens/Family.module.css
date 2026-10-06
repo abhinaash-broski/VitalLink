@@ -1,0 +1,102 @@
+/* Viewing banner: H, gap 14, 16/20, brand-subtle with brand border. */
+.viewing {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  border-radius: var(--vl-radius-lg);
+  border: 1px solid var(--vl-border-brand);
+  background: var(--vl-bg-brand-subtle);
+}
+.grow {
+  flex: 1;
+  min-width: 0;
+}
+.viewing .grow {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.manage {
+  padding: 8px 15px;
+  border-radius: 8px;
+  border: 1px solid var(--vl-border-default);
+  background: var(--vl-bg-surface);
+  color: var(--vl-text-primary);
+}
+
+.split {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+/* Profiles card: 250 wide, 14/12 padding, gap 8. */
+.profiles {
+  width: 250px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px 12px;
+  border-radius: var(--vl-radius-lg);
+  border: 1px solid var(--vl-border-subtle);
+  background: var(--vl-bg-surface);
+}
+.overline {
+  padding: 0 0 0 0;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 10px;
+  border-radius: 8px;
+}
+a.profile:hover {
+  background: var(--vl-bg-subtle);
+}
+.selected {
+  background: var(--vl-bg-brand-subtle);
+}
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.add {
+  padding: 9px 0;
+  border-radius: 8px;
+  border: 1px dashed var(--vl-border-default);
+  background: transparent;
+  color: var(--vl-text-secondary);
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.half {
+  flex: 1;
+  min-width: 0;
+}
+.rows {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.rows li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

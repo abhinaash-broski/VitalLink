@@ -1,0 +1,141 @@
+/* Today's movement: inverse card, 26/28 padding, gap 32, radius 16. */
+.today {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 26px 28px;
+  border-radius: var(--vl-radius-xl);
+  background: var(--vl-bg-inverse);
+  box-shadow: var(--vl-elevation-raised);
+}
+.ringStats {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.ringRow {
+  display: flex;
+  gap: 32px;
+}
+.ring {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.valueRow {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+/* Section / *: H3 + caption + "View all", then a 3-up card grid. */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.sectionHead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sectionHead > :nth-child(2) {
+  flex: 1;
+}
+
+.sources {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.source {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.source > span:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+/* Headline value over a chart: Metric/XL + context line. */
+.headline {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.chartHead {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Heart-rate zones / app categories: label, range, time over a track. */
+.zone {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.zoneHead {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.zoneHead > :first-child {
+  flex: 1;
+}
+.share {
+  width: 44px;
+  text-align: right;
+}
+
+/* Mood tiles: 7 across, canvas fill, 34px level dot. */
+.mood {
+  display: flex;
+  gap: 12px;
+}
+.mood > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 0;
+  border-radius: 12px;
+  background: var(--vl-bg-canvas);
+}
+.level {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+/* Screen time vs deep sleep comparison tiles. */
+.compare {
+  display: flex;
+  gap: 12px;
+}
+.compare > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px;
+  border-radius: 8px;
+}
+.limit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.limit > span:first-child {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}

@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.expo/
+scratch-ref/
+*.log
+.env*
+
+# Claude Code session files
+.claude/settings.local.json

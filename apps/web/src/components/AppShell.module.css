@@ -1,0 +1,127 @@
+.shell {
+  display: flex;
+  min-height: 100vh;
+  background: var(--vl-bg-canvas);
+}
+
+/* ---------- Sidebar (260) ---------- */
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: var(--vl-layout-sidebar-expanded);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 16px;
+  background: var(--vl-bg-surface);
+  border-right: 1px solid var(--vl-border-subtle);
+}
+.brand {
+  padding: 4px 8px;
+  margin-bottom: 20px;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  overflow-y: auto;
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--vl-text-secondary);
+}
+.item:hover {
+  background: var(--vl-bg-subtle);
+}
+.active,
+.active:hover {
+  background: var(--vl-bg-brand-subtle);
+  color: var(--vl-text-brand);
+  font-weight: 500;
+}
+.emergency {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  background: var(--vl-bg-emergency-subtle);
+  border: 1px solid var(--vl-border-critical);
+  color: var(--vl-text-energy);
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+/* ---------- Top bar (64) ---------- */
+.main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.topbar {
+  height: var(--vl-layout-topbar-height);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  background: var(--vl-bg-surface);
+  border-bottom: 1px solid var(--vl-border-subtle);
+}
+.search {
+  width: 420px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: var(--vl-bg-canvas);
+  border: 1px solid var(--vl-border-subtle);
+}
+.search input {
+  flex: 1;
+  border: 0;
+  background: transparent;
+  outline: none;
+  font: inherit;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--vl-text-primary);
+}
+.search input::placeholder {
+  color: var(--vl-text-placeholder);
+}
+.search:focus-within {
+  box-shadow: 0 0 0 4px var(--vl-border-focus);
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px 6px 6px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--vl-bg-subtle);
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+/* ---------- Content ---------- */
+.content {
+  flex: 1;
+  padding: 28px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

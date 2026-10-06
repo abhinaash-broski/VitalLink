@@ -1,0 +1,25 @@
+/* Split bar (58 tall, radius 8): segments sized by share of energy. */
+.split {
+  display: flex;
+  height: 58px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.split span {
+  flex-basis: 0;
+  display: grid;
+  place-items: center;
+  color: var(--vl-text-on-brand);
+  white-space: nowrap;
+}
+
+/* Hydration glasses: 10 × 22/32, 6 apart, radius 4, stretched across the card. */
+.glasses {
+  display: flex;
+  gap: 6px;
+  height: 32px;
+}
+.glasses span {
+  flex: 1;
+  border-radius: 4px;
+}

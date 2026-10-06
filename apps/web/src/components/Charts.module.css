@@ -1,0 +1,134 @@
+/* Dashboard week bars (plot 150, baseline at 126) */
+.weekPlot {
+  height: 126px;
+  margin-top: 16px; /* tallest bar may rise above the plot, as in Figma */
+  display: flex;
+  align-items: flex-end;
+}
+.weekCol {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+.weekBar {
+  width: 100%;
+  border-radius: 6px;
+}
+.weekAxis {
+  display: flex;
+  margin-top: 8px;
+  color: var(--vl-data-axis-label);
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+.weekAxis span {
+  flex: 1;
+  text-align: center;
+}
+
+/* My Health steps chart (plot 215: baseline 170, labels below) */
+.steps {
+  position: relative;
+  padding-top: 0;
+}
+.stepsBars {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+}
+.stepsCol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  gap: 4px;
+}
+.valueLabel {
+  color: var(--vl-text-tertiary);
+}
+.stepsBar {
+  width: 100%;
+  border-radius: 6px;
+}
+.stepsAxis {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+  color: var(--vl-data-axis-label);
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+.stepsAxis span {
+  flex: 1;
+  text-align: center;
+}
+.goalLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 0;
+  border-top: 1px solid var(--vl-border-strong);
+  z-index: 0;
+  pointer-events: none;
+}
+.goalKey {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  margin-top: 8px;
+  color: var(--vl-text-tertiary);
+}
+.goalSwatch {
+  width: 14px;
+  border-top: 1px solid var(--vl-border-strong);
+}
+
+.stepsCompact .stepsBars,
+.stepsCompact .stepsAxis {
+  gap: 10px;
+}
+
+/* Stacked day bars (Training load 130:150: plot 215, baseline 170, columns 16 apart) */
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+.stackPlot {
+  display: flex;
+  gap: 16px;
+}
+.stackCol {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+  gap: 4px;
+  text-align: center;
+}
+.stackBar {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.rest {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--vl-bg-muted);
+}
+.stackAxis {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+  color: var(--vl-data-axis-label);
+}
+.stackAxis span {
+  flex: 1;
+  text-align: center;
+}

@@ -1,0 +1,164 @@
+.grid {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+.left {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.steps {
+  gap: 4px;
+}
+.stepsHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.stepsHead > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.total {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.plot {
+  margin-top: 16px;
+}
+.stepsHead > [role="group"] {
+  margin-top: 22px;
+}
+
+.stats {
+  display: flex;
+  gap: 16px;
+}
+.stat {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px;
+  background: var(--vl-bg-surface);
+  border: 1px solid var(--vl-border-subtle);
+  border-radius: var(--vl-radius-lg);
+  box-shadow: var(--vl-elevation-card);
+}
+.statLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  color: var(--vl-text-secondary);
+}
+.statValue {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.workouts {
+  gap: 12px;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--vl-text-secondary);
+}
+.table tr {
+  border-top: 1px solid var(--vl-border-subtle);
+}
+.table th,
+.table td {
+  padding: 17px 0;
+  text-align: left;
+  font-weight: 400;
+}
+.kind {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.kind > span:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.kindIcon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--vl-bg-subtle);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.wTitle {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  color: var(--vl-text-primary);
+}
+.c1 { width: 99px; }
+.c2 { width: 89px; }
+.c3 { width: 109px; }
+.c4 { width: 115px; }
+
+.rail {
+  width: 320px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.railCard {
+  gap: 14px;
+}
+.goal {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.goalHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.goalLabel {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.streaks {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.streaks div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  line-height: 20px;
+}
+.streaks dt {
+  color: var(--vl-text-secondary);
+}
+.streaks dd {
+  margin: 0;
+  font-weight: 500;
+}

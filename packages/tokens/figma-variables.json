@@ -1,0 +1,52 @@
+{
+  "$source": "Figma file JuPJkw5r1aAtdgRQk2UuaA — local variables and styles, exported 2026-10-06 via the plugin API. Regenerate code with: npm run tokens",
+  "primitives": {
+    "blue/50": "#eef4ff", "blue/100": "#d9e5ff", "blue/200": "#bcd1ff", "blue/300": "#8eb2ff", "blue/400": "#598aff", "blue/500": "#2e63f6", "blue/600": "#1848db", "blue/700": "#1338b0", "blue/800": "#15318b", "blue/900": "#162d6e",
+    "red/50": "#fef2f2", "red/100": "#fee2e2", "red/200": "#fecaca", "red/300": "#fca5a5", "red/400": "#f87171", "red/500": "#e5484d", "red/600": "#c81e2b", "red/700": "#a71523", "red/800": "#8a1421", "red/900": "#741620",
+    "green/50": "#ecfdf3", "green/100": "#d1fadf", "green/200": "#a6f4c5", "green/300": "#6ce9a6", "green/400": "#32d583", "green/500": "#12b76a", "green/600": "#039855", "green/700": "#027a48", "green/800": "#05603a", "green/900": "#054f31",
+    "amber/50": "#fffaeb", "amber/100": "#fef0c7", "amber/200": "#fedf89", "amber/300": "#fec84b", "amber/400": "#fdb022", "amber/500": "#f79009", "amber/600": "#dc6803", "amber/700": "#b54708", "amber/800": "#93370d", "amber/900": "#7a2e0e",
+    "teal/50": "#effcf9", "teal/100": "#c9f5ec", "teal/200": "#99e9dc", "teal/300": "#5fd5c5", "teal/400": "#2bbaa9", "teal/500": "#12998c", "teal/600": "#0c7b73", "teal/700": "#0b625c", "teal/800": "#0c4e4a", "teal/900": "#0c403e",
+    "purple/50": "#f5f3ff", "purple/100": "#ebe5ff", "purple/200": "#d9ceff", "purple/300": "#b9a5fd", "purple/400": "#9a7cfb", "purple/500": "#7c5cfc", "purple/600": "#6538e8", "purple/700": "#5528c4", "purple/800": "#47239f", "purple/900": "#3b1f80",
+    "neutral/0": "#ffffff", "neutral/25": "#fcfcfd", "neutral/50": "#f8fafc", "neutral/100": "#f1f5f9", "neutral/200": "#e4eaf1", "neutral/300": "#cbd5e1", "neutral/400": "#94a3b8", "neutral/500": "#64748b", "neutral/600": "#475569", "neutral/700": "#334155", "neutral/800": "#1e293b", "neutral/900": "#0f172a", "neutral/1000": "#000000",
+    "alpha/shadow-subtle": "#0f172a0a", "alpha/shadow-soft": "#0f172a0f", "alpha/shadow-medium": "#0f172a1a", "alpha/shadow-strong": "#0f172a29", "alpha/scrim": "#0f172a7a", "alpha/focus-ring": "#2e63f63d"
+  },
+  "color": {
+    "bg/canvas": ["neutral/50", "neutral/900"], "bg/surface": ["neutral/0", "neutral/800"], "bg/surface-sunken": ["neutral/100", "neutral/900"], "bg/subtle": ["neutral/100", "neutral/700"], "bg/muted": ["neutral/200", "neutral/600"], "bg/inverse": ["neutral/900", "neutral/0"], "bg/disabled": ["neutral/100", "neutral/700"], "bg/overlay-scrim": ["alpha/scrim", "alpha/scrim"],
+    "bg/brand": ["blue/600", "blue/500"], "bg/brand-hover": ["blue/700", "blue/400"], "bg/brand-subtle": ["blue/50", "blue/900"], "bg/brand-muted": ["blue/100", "blue/800"],
+    "bg/energy": ["red/600", "red/500"], "bg/energy-hover": ["red/700", "red/400"], "bg/energy-subtle": ["red/50", "red/900"],
+    "bg/success": ["green/600", "green/500"], "bg/success-subtle": ["green/50", "green/900"], "bg/warning": ["amber/500", "amber/400"], "bg/warning-subtle": ["amber/50", "amber/900"], "bg/critical": ["red/600", "red/500"], "bg/critical-subtle": ["red/50", "red/900"], "bg/info": ["teal/600", "teal/500"], "bg/info-subtle": ["teal/50", "teal/900"],
+    "bg/emergency": ["red/600", "red/400"], "bg/emergency-subtle": ["red/50", "red/900"],
+    "text/primary": ["neutral/900", "neutral/0"], "text/secondary": ["neutral/600", "neutral/300"], "text/tertiary": ["neutral/500", "neutral/400"], "text/placeholder": ["neutral/400", "neutral/500"], "text/disabled": ["neutral/400", "neutral/500"], "text/inverse": ["neutral/0", "neutral/900"], "text/brand": ["blue/700", "blue/300"], "text/link": ["blue/600", "blue/300"], "text/energy": ["red/700", "red/300"], "text/success": ["green/700", "green/300"], "text/warning": ["amber/700", "amber/300"], "text/critical": ["red/700", "red/300"], "text/on-brand": ["neutral/0", "neutral/0"],
+    "border/subtle": ["neutral/200", "neutral/700"], "border/default": ["neutral/300", "neutral/600"], "border/strong": ["neutral/400", "neutral/500"], "border/brand": ["blue/600", "blue/400"], "border/energy": ["red/500", "red/400"], "border/success": ["green/500", "green/400"], "border/warning": ["amber/400", "amber/300"], "border/critical": ["red/500", "red/400"], "border/focus": ["blue/500", "blue/300"],
+    "icon/default": ["neutral/600", "neutral/300"], "icon/subtle": ["neutral/400", "neutral/500"], "icon/brand": ["blue/600", "blue/300"], "icon/energy": ["red/600", "red/400"], "icon/success": ["green/600", "green/400"], "icon/warning": ["amber/500", "amber/300"], "icon/critical": ["red/600", "red/400"], "icon/inverse": ["neutral/0", "neutral/900"],
+    "data/heart-rate": ["red/500", "red/400"], "data/blood-pressure": ["purple/500", "purple/400"], "data/blood-oxygen": ["teal/500", "teal/300"], "data/glucose": ["amber/500", "amber/400"], "data/weight": ["blue/500", "blue/400"], "data/sleep": ["purple/600", "purple/400"], "data/activity": ["green/500", "green/400"], "data/respiratory": ["teal/400", "teal/300"], "data/temperature": ["amber/600", "amber/400"], "data/nutrition": ["green/600", "green/400"], "data/grid-line": ["neutral/200", "neutral/700"], "data/axis-label": ["neutral/500", "neutral/400"], "data/reference-band": ["green/50", "green/900"], "data/comparison": ["neutral/300", "neutral/600"],
+    "range/normal": ["green/600", "green/400"], "range/normal-bg": ["green/50", "green/900"], "range/borderline": ["amber/500", "amber/300"], "range/borderline-bg": ["amber/50", "amber/900"], "range/high": ["red/600", "red/400"], "range/high-bg": ["red/50", "red/900"], "range/low": ["blue/600", "blue/300"], "range/low-bg": ["blue/50", "blue/900"], "range/no-data": ["neutral/400", "neutral/500"],
+    "goal/achieved": ["green/600", "green/400"], "goal/not-started": ["neutral/400", "neutral/500"], "goal/at-risk": ["amber/500", "amber/300"], "goal/on-track": ["blue/600", "blue/400"], "goal/missed": ["red/600", "red/400"], "goal/track-bg": ["neutral/100", "neutral/700"],
+    "fitness/cardio": ["red/500", "red/400"], "fitness/strength": ["purple/500", "purple/400"], "fitness/mobility": ["teal/500", "teal/300"], "fitness/recovery": ["blue/500", "blue/400"], "fitness/outdoor": ["green/500", "green/400"],
+    "intensity/light": ["green/400", "green/300"], "intensity/moderate": ["amber/400", "amber/300"], "intensity/vigorous": ["amber/600", "amber/400"], "intensity/peak": ["red/600", "red/400"],
+    "macro/protein": ["red/500", "red/400"], "macro/carbs": ["amber/500", "amber/400"], "macro/fat": ["purple/500", "purple/400"], "macro/fibre": ["green/500", "green/400"]
+  },
+  "dimension": {
+    "spacing/0": 0, "spacing/1": 4, "spacing/2": 8, "spacing/3": 12, "spacing/4": 16, "spacing/5": 20, "spacing/6": 24, "spacing/7": 28, "spacing/8": 32, "spacing/10": 40, "spacing/12": 48, "spacing/16": 64, "spacing/20": 80, "spacing/24": 96,
+    "radius/none": 0, "radius/xs": 4, "radius/sm": 6, "radius/md": 8, "radius/lg": 12, "radius/xl": 16, "radius/2xl": 24, "radius/full": 999,
+    "border/hairline": 1, "border/thick": 2, "border/focus": 2, "border/emphasis": 4,
+    "size/icon-xs": 14, "size/icon-sm": 16, "size/icon-md": 20, "size/icon-lg": 24, "size/icon-xl": 32, "size/control-sm": 32, "size/control-md": 40, "size/control-lg": 48, "size/touch-target": 44, "size/avatar-sm": 32, "size/avatar-md": 40, "size/avatar-lg": 56, "size/avatar-xl": 96,
+    "layout/sidebar-expanded": 260, "layout/sidebar-collapsed": 72, "layout/topbar-height": 64, "layout/insight-panel": 340, "layout/content-max": 1200, "layout/gutter-desktop": 32, "layout/gutter-tablet": 24, "layout/gutter-mobile": 16, "layout/column-gap": 24, "layout/mobile-tabbar": 64, "layout/mobile-header": 56, "layout/mobile-safe-bottom": 34
+  },
+  "textStyles": {
+    "display-xl": ["Bold", 56, 64, -1.5], "display-l": ["Bold", 48, 56, -1.2], "display-m": ["Bold", 40, 48, -1],
+    "h1": ["Semi Bold", 32, 40, -0.6], "h2": ["Semi Bold", 24, 32, -0.4], "h3": ["Semi Bold", 20, 28, -0.2], "h4": ["Semi Bold", 18, 26, 0], "h5": ["Semi Bold", 16, 24, 0],
+    "body-l": ["Regular", 16, 26, 0], "body-l-strong": ["Medium", 16, 26, 0], "body-m": ["Regular", 14, 22, 0], "body-m-strong": ["Medium", 14, 22, 0], "body-s": ["Regular", 13, 20, 0], "body-s-strong": ["Medium", 13, 20, 0],
+    "label-l": ["Medium", 14, 20, 0], "label-m": ["Medium", 12, 16, 0.2], "label-s": ["Semi Bold", 11, 16, 0.6], "caption": ["Regular", 12, 16, 0], "overline": ["Semi Bold", 11, 16, 0.8],
+    "metric-hero": ["Semi Bold", 48, 52, -1.5], "metric-xl": ["Semi Bold", 40, 44, -1.2], "metric-l": ["Semi Bold", 28, 34, -0.6], "metric-m": ["Semi Bold", 20, 26, -0.2], "metric-unit": ["Medium", 13, 18, 0],
+    "table": ["Regular", 14, 20, 0], "table-header": ["Semi Bold", 12, 16, 0.4], "numeric": ["Mono", 13, 20, 0], "code": ["Mono", 12, 18, 0]
+  },
+  "elevation": {
+    "hairline": [[0, 1, 2, 0, "alpha/shadow-subtle"]],
+    "card": [[0, 1, 2, 0, "alpha/shadow-subtle"], [0, 2, 6, -1, "alpha/shadow-soft"]],
+    "raised": [[0, 4, 8, -2, "alpha/shadow-soft"], [0, 2, 4, -2, "alpha/shadow-medium"]],
+    "popover": [[0, 8, 16, -4, "alpha/shadow-medium"], [0, 4, 6, -2, "alpha/shadow-soft"]],
+    "modal": [[0, 20, 32, -8, "alpha/shadow-strong"], [0, 8, 12, -6, "alpha/shadow-medium"]],
+    "emergency": [[0, 12, 28, -6, "alpha/shadow-strong"]]
+  }
+}

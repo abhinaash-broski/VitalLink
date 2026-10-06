@@ -1,0 +1,104 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+/* Appointment card: H, gap 16, padding 20. */
+.card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: var(--vl-bg-surface);
+  border: 1px solid var(--vl-border-subtle);
+  border-radius: var(--vl-radius-lg);
+  box-shadow: var(--vl-elevation-card);
+}
+.date {
+  width: 76px;
+  height: 76px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  border-radius: 12px;
+  background: var(--vl-bg-brand-subtle);
+}
+.info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+.more {
+  display: flex;
+  gap: 8px;
+}
+.btn {
+  padding: 7px 13px;
+  border-radius: 8px;
+  border: 1px solid var(--vl-border-default);
+  background: var(--vl-bg-surface);
+  color: var(--vl-text-primary);
+  white-space: nowrap;
+}
+.btn:hover {
+  background: var(--vl-bg-subtle);
+}
+.primary,
+.primary:hover {
+  border-color: var(--vl-bg-brand);
+  background: var(--vl-bg-brand);
+  color: var(--vl-text-on-brand);
+}
+
+/* Calendar: 7 × 40px columns, 34px day pills. */
+.cal {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.cal th {
+  padding: 0;
+  font-weight: 600;
+  color: var(--vl-text-tertiary);
+  text-align: center;
+}
+.cal td {
+  padding: 0;
+  text-align: center;
+}
+.cal tr:first-child td {
+  padding-top: 12px;
+}
+.cal tbody tr + tr td {
+  padding-top: 12px;
+}
+.day {
+  display: inline-grid;
+  place-items: center;
+  width: 40px;
+  height: 34px;
+  border-radius: 999px;
+  color: var(--vl-text-secondary);
+}
+.today {
+  background: var(--vl-bg-brand);
+  color: var(--vl-text-on-brand);
+}
+.marked {
+  background: var(--vl-bg-brand-subtle);
+  color: var(--vl-text-brand);
+}
+.search {
+  padding: 10px 0;
+}

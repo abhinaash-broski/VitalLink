@@ -1,0 +1,49 @@
+/* Shared list rows: Session / Meal rows (H, gap 14, 13/0, top border). */
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 0;
+  border-top: 1px solid var(--vl-border-subtle);
+}
+.text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.stack1 {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.c80 { width: 80px; flex-shrink: 0; }
+.c90 { width: 90px; flex-shrink: 0; }
+.c96 { width: 96px; flex-shrink: 0; }
+.c140 { width: 140px; flex-shrink: 0; }
+.c150 { width: 150px; flex-shrink: 0; }
+
+/* Personal record row: name/date left, value right. */
+.pr {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.wide {
+  width: 100%;
+  padding: 10px 0;
+}
+
+/* Row of tinted count cards (Stats 62:685). */
+.tints {
+  display: flex;
+  gap: 16px;
+}

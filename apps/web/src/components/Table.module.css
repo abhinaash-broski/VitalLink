@@ -1,0 +1,55 @@
+/* Data tables (Medication table 62:685, Lab table 61:53): header row on bg/subtle,
+   Data/Table Header caps, 13/20 cells, subtle rules between rows. */
+.wrap {
+  border: 1px solid var(--vl-border-subtle);
+  border-radius: var(--vl-radius-lg);
+  box-shadow: var(--vl-elevation-card);
+  overflow: hidden;
+  background: var(--vl-bg-surface);
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.table th,
+.table td {
+  padding: 13px 0;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 400;
+}
+.table th:first-child,
+.table td:first-child {
+  padding-left: 20px;
+}
+.table th:last-child,
+.table td:last-child {
+  padding-right: 20px;
+}
+.table thead th {
+  background: var(--vl-bg-subtle);
+  border-bottom: 1px solid var(--vl-border-subtle);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--vl-text-tertiary);
+}
+.table tbody tr + tr > * {
+  border-top: 1px solid var(--vl-border-subtle);
+}
+.right {
+  text-align: right !important;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.foot {
+  padding: 12px 20px;
+  background: var(--vl-bg-subtle);
+  border-top: 1px solid var(--vl-border-subtle);
+}
